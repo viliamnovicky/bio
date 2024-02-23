@@ -39,6 +39,9 @@ const margin = {
 };
 
 const width = {
+  very_small: css`
+    width: 40%;
+  `,
   small: css`
     width: 60%;
   `,

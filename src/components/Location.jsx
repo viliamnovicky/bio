@@ -62,6 +62,7 @@ const Icon = styled.img`
 function Location() {
   return (
     <Section>
+      <Heading width="small" textAlign="right" margin="right">i am Waiting for your call</Heading>
       <Heading textTransform="normal">
         {"<Location/>"}
       </Heading>

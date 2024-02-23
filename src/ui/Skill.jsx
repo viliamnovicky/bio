@@ -1,4 +1,8 @@
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import {
+  CircularProgressbar,
+  CircularProgressbarWithChildren,
+  buildStyles,
+} from "react-circular-progressbar";
 import styled from "styled-components";
 
 const StyledSkill = styled.div`
@@ -7,33 +11,34 @@ const StyledSkill = styled.div`
 `;
 
 const Icon = styled.img`
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -70%);
-  width: 5vw;
+  width: 50%;
 `;
 
 const Name = styled.p`
   font-size: 3rem;
+  padding-top: 1rem;
   text-align: center;
   text-transform: uppercase;
   color: var(--color-grey-800);
   font-weight: 800;
-`
+`;
 
-function Skill({skill, color, value, name}) {
-    return (
-        <StyledSkill>
-          <CircularProgressbar value={value}styles={buildStyles({
-            trailColor: "var(--color-grey-200)",
-            pathColor: color
-
-          })}/>;
-          <Icon src={skill} />
-          <Name>{name}</Name>
-        </StyledSkill>
-    )
+function Skill({ skill, color, value, name }) {
+  return (
+    <StyledSkill>
+      <CircularProgressbarWithChildren
+        value={value}
+        styles={buildStyles({
+          trailColor: "var(--color-grey-200)",
+          pathColor: color,
+          pathTransitionDuration: 1,
+        })}
+      >
+        <Icon src={skill} />
+      </CircularProgressbarWithChildren>
+      <Name>{name}</Name>
+    </StyledSkill>
+  );
 }
 
-export default Skill
+export default Skill;

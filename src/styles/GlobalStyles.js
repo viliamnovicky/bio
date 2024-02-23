@@ -49,6 +49,13 @@ const GlobalStyles = createGlobalStyle`
   font-family: "Asap", sans-serif;
 }
 
+*::selection {
+  color: var(--color-grey-50);
+  background: var(--color-grey-800);
+  -webkit-text-fill-color: var(--color-grey-50);
+}
+
+
 *:disabled {
   cursor: not-allowed;
 }
