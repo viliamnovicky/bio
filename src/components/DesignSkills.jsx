@@ -13,7 +13,7 @@ import styledComponent from "../../public/svg/styled-component.png";
 
 function DesignSkills({ currentElement }) {
   return (
-    <Section id="Design" className="observe-me">
+    <Section id="Design" className="observe-me" opacity={currentElement === "Design" ? "visible" : "hidden"}>
       <Heading margin="left" width="small" textAlign="left">
         Bringing colors to your code
       </Heading>

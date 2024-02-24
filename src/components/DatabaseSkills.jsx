@@ -9,7 +9,7 @@ import Heading from "../ui/Heading";
 
 function DatabaseSkills({currentElement}) {
   return (
-    <Section id="Databases" className="observe-me">
+    <Section id="Databases" className="observe-me" opacity={currentElement === "Databases" ? "visible" : "hidden"}>
       <Heading width="very_small" textAlign="right" margin="right">{"it's all about that data"}</Heading>
       <Heading textTransform="normal">{"<Databases/>"}</Heading>
       <Skills justifyContent = "center">

@@ -14,7 +14,7 @@ import Lines from "../ui/Lines";
 
 function ProgrammingSkills({ currentElement }) {
   return (
-    <Section id="Languages" className="observe-me">
+    <Section id="Languages" className="observe-me" opacity={currentElement === "Languages" ? "visible" : "hidden"}>
       <Heading margin="left" width="medium" textAlign="left">
         dou you speak javascript?
       </Heading>

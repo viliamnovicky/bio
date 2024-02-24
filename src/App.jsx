@@ -17,8 +17,8 @@ function App() {
       <GlobalStyles />
       <Header section={currentElement !== "end" ? currentElement : "documentation"} />
   
-        <Intro/>
-        <SkillsOverview/>
+        <Intro currentElement={currentElement}/>
+        <SkillsOverview currentElement={currentElement}/>
         <ProgrammingSkills currentElement={currentElement}/>
         <DatabaseSkills currentElement={currentElement}/>
         <DesignSkills currentElement={currentElement}/>

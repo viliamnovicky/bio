@@ -3,6 +3,7 @@ import Heading from "../ui/Heading";
 import home from "../../public/svg/home.svg";
 import computer from "../../public/svg/computer.svg";
 import Section from "../ui/Section";
+import Map from "../ui/Map";
 
 const Containers = styled.div`
   padding-top: 10rem;
@@ -59,13 +60,23 @@ const Icon = styled.img`
   border: 1rem solid var(--color-grey-200);
 `;
 
+const HeadingCont = styled.div`
+  position: relative;
+  padding: 10rem;
+  width: 100%;
+  height: 40rem;
+`
+
 function Location() {
   return (
     <Section>
-      <Heading width="small" textAlign="right" margin="right">i am Waiting for your call</Heading>
-      <Heading textTransform="normal">
-        {"<Location/>"}
-      </Heading>
+      <HeadingCont>
+        <Map />
+        <Heading width="small" textAlign="right" margin="right">
+          i am Waiting for your call
+        </Heading>
+        <Heading textTransform="normal">{"<Location/>"}</Heading>
+      </HeadingCont>
       <Containers id="location" className="observe-me">
         <Container>
           <Icon src={home} />
