@@ -12,9 +12,9 @@ const StyledProjects = styled.div`
     gap: 2rem;
 `
 
-function Projects() {
+function Projects({currentElement}) {
     return (
-        <Section>
+        <Section id ="Projects" className="observe-me" opacity={currentElement === "Projects" ? "visible" : "hidden"}>
             <Heading margin="left" textAlign="left" width="very_small" >{"Let's build together"}</Heading>
             <Heading textTransform="normal">{"<Projects/>"}</Heading>
             <StyledProjects>

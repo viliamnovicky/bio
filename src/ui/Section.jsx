@@ -5,7 +5,7 @@ const opacity = {
     opacity: 1;
   `,
   hidden: css`
-    opacity: 0;
+    opacity: 0.5;
   `,
 };
 

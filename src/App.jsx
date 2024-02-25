@@ -22,8 +22,8 @@ function App() {
         <ProgrammingSkills currentElement={currentElement}/>
         <DatabaseSkills currentElement={currentElement}/>
         <DesignSkills currentElement={currentElement}/>
-        <Projects/>
-        <Location/>
+        <Projects currentElement={currentElement}/>
+        <Location currentElement={currentElement}/>
 
     </div>
   );

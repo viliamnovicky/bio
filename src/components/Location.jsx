@@ -67,11 +67,11 @@ const HeadingCont = styled.div`
   height: 40rem;
 `
 
-function Location() {
+function Location({currentElement}) {
   return (
-    <Section>
+    <Section id ="Location" className="observe-me">
       <HeadingCont>
-        <Map />
+        <Map currentElement={currentElement}/>
         <Heading width="small" textAlign="right" margin="right">
           i am Waiting for your call
         </Heading>
