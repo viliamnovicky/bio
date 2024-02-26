@@ -8,6 +8,7 @@ import SkillsOverview from "./components/SkillsOverview";
 import DatabaseSkills from "./components/DatabaseSkills";
 import DesignSkills from "./components/DesignSkills";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   const currentElement = useViewportObserver()
@@ -24,7 +25,7 @@ function App() {
         <DesignSkills currentElement={currentElement}/>
         <Projects currentElement={currentElement}/>
         <Location currentElement={currentElement}/>
-
+        <Footer/>
     </div>
   );
 }

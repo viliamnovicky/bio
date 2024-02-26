@@ -45,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  transition: all 0.3s, border 0.3s;
+  transition: all 0.3s;
   font-family: "Asap", sans-serif;
 }
 
@@ -63,6 +63,11 @@ const GlobalStyles = createGlobalStyle`
 html {
   font-size: 62.5%;
   background: var(--color-grey-50);
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
 }
 
 a {
