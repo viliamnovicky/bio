@@ -6,8 +6,12 @@ import {
 import styled from "styled-components";
 
 const StyledSkill = styled.div`
-  width: 10vw;
+  width: 9vw;
   position: relative;
+
+  @media (max-width: 1000px) {
+      width: 100%
+  };
 `;
 
 const Icon = styled.img`

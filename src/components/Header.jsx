@@ -17,6 +17,12 @@ const StyledHeader = styled.div`
   justify-content: space-between;
   padding: 0 4rem;
   z-index: 1000;
+
+  @media (max-width: 1000px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+  }
 `;
 
 const Logo = styled.h1`

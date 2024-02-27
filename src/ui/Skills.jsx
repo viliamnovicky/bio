@@ -20,6 +20,13 @@ const Skills = styled.div`
   justify-content: space-between;
   gap: 2rem;
   ${(props) => justifyContent[props.justifyContent]}
+
+  @media (max-width: 1000px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+  };
 `;
 
 Skills.defaultProps = {

@@ -22,6 +22,24 @@ const StyledLink = styled.a`
       visibility: visible;
     }
   }
+
+  @media (max-width: 1000px) {
+    width: 2rem;
+    height: 2rem;
+    &:hover {
+      background: var(--color-grey-50);
+      width: 2rem;
+
+      img {
+        filter: none;
+      }
+
+      p {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
 `;
 
 const Paragraph = styled.p`
@@ -39,6 +57,11 @@ const Paragraph = styled.p`
 const Image = styled.img`
   width: 3rem;
   height: 3rem;
+
+  @media (max-width: 1000px) {
+    width: 2rem;
+  height: 2rem;
+  }
 `;
 
 function Link({ href, bgImage, name }) {

@@ -29,9 +29,26 @@ const textAlign = {
 const margin = {
   left: css`
     margin-left: 0;
+
+    @media (max-width: 1350px) {
+      margin-left: 2rem;
+  };
+
+  @media (max-width: 1000px) {
+      margin: auto;
+      text-align: center;
+  }
   `,
   right: css`
     margin-right: 0;
+
+    @media (max-width: 1350px) {
+      margin-right: 2rem;
+  };
+  @media (max-width: 1000px) {
+      margin: auto;
+      text-align: center;
+  }
   `,
   center: css`
     margin: auto;
@@ -65,6 +82,10 @@ const Heading = styled.h1`
   ${(props) => textAlign[props.textAlign]}
   ${(props) => width[props.width]}
   ${(props) => margin[props.margin]}
+
+  @media (max-width: 1350px) {
+    font-size: 6rem;
+  }
 `;
 
 Heading.defaultProps = {

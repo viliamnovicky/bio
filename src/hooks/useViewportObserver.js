@@ -16,7 +16,7 @@ const useViewportObserver = () => {
           }
         });
       },
-      { root: null, rootMargin: '0px', threshold: 0.6 } // Customize options as needed
+      { root: null, rootMargin: '0px', threshold: `${window.innerWidth < 1000 ? 0.05 : 0.6}` } // Customize options as needed
     );
 
     // Observe all elements with a specific class (you can customize this)

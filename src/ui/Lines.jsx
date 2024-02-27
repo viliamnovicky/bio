@@ -6,6 +6,13 @@ const StyledLines = styled.div`
   margin: auto;
   margin-top: 5rem;
   position: relative;
+
+  @media (max-width: 1000px) {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      margin-top: -2rem;
+  };
 `;
 
 const Left = styled.div`

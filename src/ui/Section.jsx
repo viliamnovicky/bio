@@ -6,6 +6,10 @@ const opacity = {
   `,
   hidden: css`
     opacity: 0.5;
+
+    @media (max-width: 1000px) {
+      opacity: 1;
+  };
   `,
 };
 
@@ -15,6 +19,10 @@ const Section = styled.div`
   margin: auto;
   position: relative;
   ${(props) => opacity[props.opacity]};
+
+  @media (max-width: 1350px) {
+    width: 96vw;
+  }
 `;
 
 

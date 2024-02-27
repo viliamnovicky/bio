@@ -29,7 +29,7 @@ const Portrait = styled.img`
 function Intro({currentElement}) {
   return (
     <StyledIntro id="introduction" className="observe-me" opacity={currentElement === "introduction" ? "visible" : "hidden"}>
-      <Heading textAlign="left">the right piece of hardware for your company</Heading>
+      <Heading textAlign="left" margin="left">the right piece of hardware for your company</Heading>
       <Portrait src={portrait} />
     </StyledIntro>
   );
