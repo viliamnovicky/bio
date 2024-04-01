@@ -9,12 +9,14 @@ const opacity = {
 
     @media (max-width: 1000px) {
       opacity: 1;
-  };
+    }
   `,
 };
 
 const Section = styled.div`
-  padding-top: 15rem;
+overflow: hidden;
+  height: 100vh;
+  padding-top: 8rem;
   max-width: 130rem;
   margin: auto;
   position: relative;
@@ -24,7 +26,5 @@ const Section = styled.div`
     width: 96vw;
   }
 `;
-
-
 
 export default Section;

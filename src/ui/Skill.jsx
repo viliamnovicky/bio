@@ -6,7 +6,7 @@ import {
 import styled from "styled-components";
 
 const StyledSkill = styled.div`
-  width: 9vw;
+  width: 7vw;
   position: relative;
 
   @media (max-width: 1000px) {
@@ -15,7 +15,7 @@ const StyledSkill = styled.div`
 `;
 
 const Icon = styled.img`
-  width: 50%;
+  width: 45%;
 `;
 
 const Name = styled.p`

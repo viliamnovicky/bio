@@ -147,6 +147,13 @@ ul {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-grey-500);
-}`;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  color: var(--color-grey-800);
+  cursor: pointer;
+}
+
+`;
 
 export default GlobalStyles;

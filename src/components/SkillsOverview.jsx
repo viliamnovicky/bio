@@ -1,13 +1,88 @@
-import Heading from "../ui/Heading"
-import Section from "../ui/Section"
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
-function SkillsOverview({currentElement}) {
-    return (
-        <Section id="My Skills" className="observe-me" opacity={currentElement === "My Skills" ? "visible" : "hidden"}>
-            <Heading textAlign="right" width="small" margin="right">useful knowledge that I can bring</Heading>
-            <Heading textAlign="left" width="small" margin="left">useful knowledge that I can bring</Heading>
-        </Section>
-    )
+import blobSolutions from "../../public/img/blob-solutions.png";
+import blobCreativity from "../../public/img/blob-creativity.png";
+
+import Heading from "../ui/Heading";
+import Section from "../ui/Section";
+import styled from "styled-components";
+
+const Container = styled.div`
+    display: flex;
+    padding: 5rem;
+    height: 50vh;
+`
+
+const Image = styled.img`
+  height: 35rem;
+`;
+
+function SkillsOverview({ currentElement }) {
+  return (
+    <Section
+      id="My Skills"
+      className="observe-me"
+      opacity={currentElement === "My Skills" ? "visible" : "hidden"}
+    >
+      <Heading textAlign="right" width="small" margin="right">
+        useful skills that I can bring
+      </Heading>
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        // pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+      >
+        <SwiperSlide>
+          <Container>
+            <Heading textAlign="left" width="small" margin="left">
+              problem solution
+            </Heading>
+            <p>Learning programming languages opened whole new world for me. </p>
+            <Image src={blobSolutions}></Image>
+          </Container>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Container>
+            <Heading textAlign="left" width="small" margin="left">
+              creativity
+            </Heading>
+            <p>I love art from my childhood. When i come with some web app idea, it cannot just do things.
+              It must also look beautiful. I want my pages to be a piece of art. </p>
+            <Image src={blobCreativity}></Image>
+          </Container>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Container>
+            <Heading textAlign="left" width="small" margin="left">
+              fast learning
+            </Heading>
+            <p>Currently i learn new stuff by evenings after 9 hours of work. I made amazing progress and i believe
+              that in your company my potential fully explodes and i will be very good asset to your team</p>
+            <Image src={blobSolutions}></Image>
+          </Container>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Container>
+            <Heading textAlign="left" width="small" margin="left">
+              problem solution
+            </Heading>
+            <Image src={blobSolutions}></Image>
+          </Container>
+        </SwiperSlide>
+        
+      </Swiper>
+    </Section>
+  );
 }
 
-export default SkillsOverview
+export default SkillsOverview;

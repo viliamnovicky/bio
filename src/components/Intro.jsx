@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import portrait from "../../public/img/portret.png";
 import Heading from "../ui/Heading";
+import Section from "../ui/Section";
 
 const opacity = {
   visible: css`
@@ -21,17 +22,24 @@ const StyledIntro = styled.div`
   ${(props) => opacity[props.opacity]};
 `;
 
-
 const Portrait = styled.img`
   padding-top: 20rem;
 `;
 
-function Intro({currentElement}) {
+function Intro({ currentElement }) {
   return (
-    <StyledIntro id="introduction" className="observe-me" opacity={currentElement === "introduction" ? "visible" : "hidden"}>
-      <Heading textAlign="left" margin="left">the right piece of hardware for your company</Heading>
-      <Portrait src={portrait} />
-    </StyledIntro>
+    <Section>
+      <StyledIntro
+        id="introduction"
+        className="observe-me"
+        opacity={currentElement === "introduction" ? "visible" : "hidden"}
+      >
+        <Heading textAlign="left" margin="left">
+          the right piece of hardware for your company
+        </Heading>
+        <Portrait src={portrait} />
+      </StyledIntro>
+    </Section>
   );
 }
 
