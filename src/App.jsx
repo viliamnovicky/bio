@@ -19,10 +19,10 @@ function App() {
       <Header section={currentElement !== "end" ? currentElement : "documentation"} />
   
         <Intro currentElement={currentElement}/>
-        <SkillsOverview currentElement={currentElement}/>
         <ProgrammingSkills currentElement={currentElement}/>
         <DatabaseSkills currentElement={currentElement}/>
         <DesignSkills currentElement={currentElement}/>
+        <SkillsOverview currentElement={currentElement}/>
         <Projects currentElement={currentElement}/>
         <Location currentElement={currentElement}/>
         <Footer/>

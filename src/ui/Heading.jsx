@@ -74,6 +74,7 @@ const Heading = styled.h1`
   margin: auto;
   font-size: 8rem;
   font-weight: 800;
+  padding-bottom: 5rem;
   //width: 70rem;
   background: -webkit-linear-gradient(180deg, #a9c9ff, #ffbbec);
   -webkit-background-clip: text;

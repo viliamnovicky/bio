@@ -9,6 +9,8 @@ import "swiper/css/scrollbar";
 
 import blobSolutions from "../../public/img/blob-solutions.png";
 import blobCreativity from "../../public/img/blob-creativity.png";
+import blobLearning from "../../public/img/blob-learning.png";
+import blobResponsibility from "../../public/img/blob-responsibility.png";
 
 import Heading from "../ui/Heading";
 import Section from "../ui/Section";
@@ -16,7 +18,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
     display: flex;
-    padding: 5rem;
+    padding: 5rem 10rem;
     height: 50vh;
 `
 
@@ -32,7 +34,7 @@ function SkillsOverview({ currentElement }) {
       opacity={currentElement === "My Skills" ? "visible" : "hidden"}
     >
       <Heading textAlign="right" width="small" margin="right">
-        useful skills that I can bring
+        another useful skills that I can bring
       </Heading>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -68,15 +70,15 @@ function SkillsOverview({ currentElement }) {
             </Heading>
             <p>Currently i learn new stuff by evenings after 9 hours of work. I made amazing progress and i believe
               that in your company my potential fully explodes and i will be very good asset to your team</p>
-            <Image src={blobSolutions}></Image>
+            <Image src={blobLearning}></Image>
           </Container>
         </SwiperSlide>
         <SwiperSlide>
           <Container>
             <Heading textAlign="left" width="small" margin="left">
-              problem solution
+              responsibility
             </Heading>
-            <Image src={blobSolutions}></Image>
+            <Image src={blobResponsibility}></Image>
           </Container>
         </SwiperSlide>
         

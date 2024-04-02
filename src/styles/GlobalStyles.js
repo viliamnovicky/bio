@@ -154,6 +154,7 @@ ul {
   cursor: pointer;
 }
 
+
 `;
 
 export default GlobalStyles;
