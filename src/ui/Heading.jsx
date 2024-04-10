@@ -87,6 +87,17 @@ const Heading = styled.h1`
   @media (max-width: 1350px) {
     font-size: 6rem;
   }
+
+  @media (max-width: 1000px) {
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 3rem;
+  }
 `;
 
 Heading.defaultProps = {

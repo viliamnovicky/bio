@@ -24,6 +24,8 @@ overflow: hidden;
 
   @media (max-width: 1350px) {
     width: 96vw;
+    margin: auto;
+    height: auto;
   }
 `;
 
